@@ -1,0 +1,367 @@
+.header {
+    height: 110px;
+    background: #F2F1EF;
+}
+
+.header__desktop,
+.header__desktop .custom-wrap {
+    height: inherit;
+}
+
+.header__desktop .custom-wrap {
+    display: flex;
+    align-items: center;
+}
+
+.header__row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__col:nth-of-type(1) {
+    display: flex;
+    align-items: center;
+}
+
+.header__col-logo {
+    margin-right: 100px;
+}
+
+.header__col-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+}
+
+.header__col-links a {
+    margin-right: 40px;
+}
+
+.hero__wrapper {
+    padding: 90px 0;
+}
+
+.hero__row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero__title {
+    line-height: 7rem;
+    margin-top: 0;
+    margin-bottom: 35px;
+}
+
+.hero__title span {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.hero__title span img {
+    margin-bottom: -10px;
+}
+
+.hero__tags {
+    font-size: 2.3rem;
+    line-height: 3.2rem;
+    letter-spacing: 0.48px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.hero__tags .tag {
+    position: relative;
+    display: inline-block;
+    margin-right: 52px;
+}
+
+.hero__tags .tag:after {
+    position: absolute;
+    content: '';
+    background: url(../images/hero-sm-icon.svg);
+    width: 19px;
+    height: 19px;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -37px;
+}
+
+.hero__tags .tag:last-of-type::after {
+    content: unset;
+}
+
+.hero__button {
+    display: flex;
+    align-items: center;
+}
+
+.about__wrapper {
+    padding: 30px 0 60px;
+}
+
+.about__title {
+    margin: 0 auto 60px auto;
+}
+
+.about__row {
+    display: flex;
+    font-size: 2rem;
+    line-height: 2.6rem;
+    margin-bottom: 90px;
+}
+
+.about__col:nth-of-type(1) {
+    max-width: 485px;
+    margin-right: 120px;
+}
+
+.about__col p {
+    margin-bottom: 30px;
+}
+
+.about__col .col-item {
+    margin-bottom: 40px;
+}
+
+.about__col .col-item .name {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    color: #E94D35;
+    margin-bottom: 5px;
+}
+
+.about__cards {
+    display: flex;
+}
+
+.about__card {
+    width: calc(100% / 3);
+    height: 152px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about__card .card .card__num {
+    font-size: 5.6rem;
+    line-height: 6.4rem;
+    margin-bottom: 11px;
+    text-align: center;
+}
+
+.about__card .card .card__desc {
+    font-size: 1.6rem;
+    line-height: 3.2rem;
+    letter-spacing: 1.28px;
+    text-transform: uppercase;
+}
+
+.about__card:nth-of-type(2n-1) {
+    border: 2px solid #161513;
+}
+
+
+.about__card:nth-of-type(2n) {
+    background: #161513;
+    border: 2px solid #161513;
+    color: #fff;
+}
+
+.portfolio__wrapper {
+    padding: 60px 0 80px;
+}
+
+.portfolio__title {
+    margin: 0 auto 10px auto;
+}
+
+.portfolio__subtitle {
+    font-size: 1.8rem;
+    line-height: 3.2rem;
+    text-align: center;
+    letter-spacing: 1.44px;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+}
+
+.portfolio__card .card__slider {
+    display: flex;
+    margin-bottom: 40px;
+    filter: drop-shadow(0px 0px 73px rgba(233, 77, 53, 0.1));
+}
+
+.portfolio__card .card__slider-item {
+    margin-right: 20px;
+}
+
+.portfolio__card .card__tag {
+    width: fit-content;
+    padding: 9px 21px;
+    background: #E94D35;
+    color: #fff;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    letter-spacing: 1.44px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.portfolio__card .card__text {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.portfolio__card .card__text .title {
+    max-width: 478px;
+    font-size: 3.5rem;
+    line-height: 4rem;
+    letter-spacing: 1.44px;
+}
+
+.portfolio__card .card__text .desc {
+    max-width: 518px;
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+}
+
+.portfolio__card .card__button {
+    font-size: 2rem;
+    line-height: 3.2rem;
+    text-decoration-line: underline;
+}
+
+.skills__wrapper {
+    position: relative;
+    padding: 80px 0 95px;
+    overflow-x: hidden;
+}
+
+.skills__wrapper:before {
+    position: absolute;
+    content: '';
+    background: url(../images/big-icon.svg);
+    width: 372px;
+    height: 372px;
+    top: 35%;
+    left: -185px;
+    background-repeat: no-repeat;
+}
+
+.skills__row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skills__cards {
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.skills__card {
+    width: 180px;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    filter: drop-shadow(0px 0px 73px rgba(233, 77, 53, 0.1));
+    margin-bottom: 30px;
+}
+
+.experience__wrapper {
+    padding: 95px 0;
+}
+
+.experience__title,
+.experience__subtitle {
+    margin-left: 72px;
+}
+
+.experience__subtitle {
+    margin-bottom: 60px;
+}
+
+.experience__card {
+    border-top: 1px solid #000;
+    padding: 30px 0 30px 72px;
+}
+
+.experience__card:last-of-type {
+    border-bottom: 1px solid #000;
+}
+
+.experience__card .card {
+    display: flex;
+    align-items: center;
+}
+
+.experience__card .card__num {
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 3.8rem;
+    margin-right: 80px;
+}
+
+.experience__card .card__text .title {
+    font-weight: 500;
+    font-size: 2.4rem;
+    line-height: 3.1rem;
+    margin-bottom: 10px;
+}
+
+.experience__card .card__text .title span {
+    color: #E94D35;
+}
+
+.experience__card .card__text .desc {
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+}
+
+.footer {
+    background: #161513;
+}
+
+.footer__wrapper {
+    padding: 100px 0;
+}
+
+.footer__title {
+    width: 700px;
+    margin: 0 auto 60px auto;
+    color: #fff;
+    text-align: center;
+}
+
+.footer__button {
+    width: fit-content;
+    position: relative;
+    font-size: 3rem;
+    line-height: 3.2rem;
+    letter-spacing: 0.48px;
+    text-transform: uppercase;
+    color: #fff;
+    padding-left: 89px;
+    margin: 0 auto;
+}
+
+.footer__button:before {
+    position: absolute;
+    content: '';
+    background: url(../images/footer-icon.svg);
+    width: 59px;
+    height: 59px;
+    background-repeat: no-repeat;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+}
