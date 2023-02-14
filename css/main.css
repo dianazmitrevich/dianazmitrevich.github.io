@@ -1,6 +1,7 @@
 .header {
     height: 110px;
     background: #F2F1EF;
+    transition: all .4s ease-in-out;
 }
 
 .header__desktop,
@@ -27,6 +28,7 @@
 
 .header__col-logo {
     margin-right: 100px;
+    transition: all .25s ease-in-out;
 }
 
 .header__col-links {
@@ -39,6 +41,7 @@
 
 .header__col-links a {
     margin-right: 40px;
+    transition: all .25s ease-in-out;
 }
 
 .hero__wrapper {
@@ -182,11 +185,7 @@
 }
 
 .portfolio__subtitle {
-    font-size: 1.8rem;
-    line-height: 3.2rem;
     text-align: center;
-    letter-spacing: 1.44px;
-    text-transform: uppercase;
     margin-bottom: 60px;
 }
 
@@ -194,6 +193,7 @@
     display: flex;
     margin-bottom: 40px;
     filter: drop-shadow(0px 0px 73px rgba(233, 77, 53, 0.1));
+    cursor: pointer;
 }
 
 .portfolio__card .card__slider-item {
@@ -278,7 +278,11 @@
 }
 
 .experience__wrapper {
-    padding: 95px 0;
+    padding: 95px 0 190px;
+}
+
+.experience__title {
+    margin-top: 0;
 }
 
 .experience__title,
@@ -287,7 +291,7 @@
 }
 
 .experience__subtitle {
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 }
 
 .experience__card {
@@ -364,4 +368,304 @@
     top: 50%;
     transform: translateY(-50%);
     left: 0;
+}
+
+@media (max-width: 1239px) {
+    .portfolio__card .desc {
+        max-width: 450px !important;
+    }
+}
+
+@media (max-width: 991px) {
+    .header__col-logo {
+        margin-right: 60px;
+    }
+
+    .hero__row {
+        flex-direction: column-reverse;
+    }
+
+    .hero__image {
+        text-align: center;
+    }
+
+    .hero__title {
+        font-size: 4.9rem;
+        line-height: 5.6rem;
+        background: #F2F1EF;
+        margin-top: -80px;
+        padding-top: 40px;
+    }
+
+    .about__row {
+        flex-direction: column-reverse;
+        margin-bottom: 60px;
+    }
+
+    .about__col:nth-of-type(2) {
+        display: flex;
+    }
+
+    .about__col .col-item {
+        margin-right: 60px;
+        margin-bottom: 60px;
+    }
+
+    .about__col p {
+        margin-bottom: 20px;
+    }
+
+    .about__card {
+        height: 170px;
+    }
+
+    .about__card .card__num {
+        font-size: 4.5rem !important;
+    }
+
+    .about__card .card__desc {
+        max-width: 80%;
+        text-align: center;
+        margin: 0 auto;
+        line-height: 2.4rem !important;
+    }
+
+    .portfolio__wrapper {
+        padding-bottom: 60px;
+    }
+
+    .portfolio__card .card__text {
+        flex-direction: column;
+    }
+
+    .portfolio__card .card__text .title {
+        margin-bottom: 15px;
+    }
+
+    .skills__wrapper {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .skills__row {
+        flex-direction: column;
+    }
+
+    .skills__wrapper:before {
+        top: 0;
+        right: -185px !important;
+        left: unset;
+    }
+
+    .skills__col:nth-of-type(1) {
+        margin-bottom: 40px;
+    }
+
+    .skills__cards {
+        width: 100%;
+    }
+
+    .skills__card {
+        width: 120px;
+        height: 120px;
+        margin-bottom: 20px;
+    }
+
+    .skills__card img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .experience__wrapper {
+        padding-top: 60px;
+        padding-bottom: 120px;
+    }
+
+    .experience__title,
+    .experience__subtitle {
+        margin-left: 0;
+    }
+
+    .experience__card {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .header__col-logo {
+        margin-right: 25px;
+    }
+
+    .header__col-links a {
+        margin-right: 20px;
+    }
+
+    .hero__title span img {
+        margin-bottom: -40px;
+    }
+
+    .about__col:nth-of-type(1) {
+        width: 100%;
+    }
+
+    .about__card .card__num {
+        font-size: 3.2rem !important;
+        line-height: 4.6rem !important;
+    }
+
+    .about__card {
+        height: 150px;
+    }
+
+    .skills__wrapper {
+        padding-bottom: 40px;
+    }
+
+    .skills__card {
+        width: 153px;
+        height: 153px;
+    }
+
+    .skills__card img {
+        height: 80px;
+        width: 80px;
+    }
+
+    .experience__wrapper {
+        padding-top: 60px;
+    }
+
+    .footer__title {
+        width: 550px;
+    }
+}
+
+@media (max-width: 575px) {
+    .hero__wrapper {
+        padding: 60px 0;
+    }
+
+    .header__col-links {
+        display: none;
+    }
+
+    .hero__image img {
+        max-width: 305px;
+        width: 100%;
+    }
+
+    .hero__title span img {
+        margin-bottom: -32px;
+    }
+
+    .hero__tags {
+        font-size: 1.8rem;
+        line-height: 2.2rem;
+    }
+
+    .btn-main-dark {
+        width: 140px;
+    }
+
+    .btn-main {
+        width: 120px;
+    }
+
+    .about__wrapper {
+        padding-bottom: 50px;
+    }
+
+    .about__row {
+        margin-bottom: 40px;
+    }
+
+    .about__col:nth-of-type(2) {
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+
+    .about__col .col-item {
+        margin-bottom: 20px;
+    }
+
+    .about__cards {
+        flex-wrap: wrap;
+    }
+
+    .about__card {
+        width: 100%;
+    }
+
+    .portfolio__wrapper {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .skills__wrapper {
+        padding-top: 50px;
+    }
+
+    .skills__wrapper:before {
+        right: -236px !important;
+    }
+
+    .skills__card {
+        width: calc((100% - 20px) / 3);
+        height: 120px;
+        margin-bottom: 10px;
+    }
+
+    .skills__card img {
+        width: 60%;
+    }
+
+    .experience__wrapper {
+        padding-top: 50px;
+        padding-bottom: 100px;
+    }
+
+    .experience__card .card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .experience__card .card__num {
+        margin-bottom: 20px;
+    }
+
+    .footer__wrapper {
+        padding-bottom: 130px;
+    }
+
+    .footer__title {
+        width: 80%;
+    }
+
+    .footer__button a {
+        display: none;
+    }
+
+    .footer__button:before {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+}
+
+@media (max-width: 371px) {
+    .hero__title {
+        font-size: 3.1rem !important;
+    }
+
+    .hero__title span {
+        margin-left: 10px;
+        margin-right: 0;
+    }
+
+    .hero__title span img {
+        width: 40px;
+        height: 40px;
+        margin-bottom: -28px;
+    }
 }
