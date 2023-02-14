@@ -54,9 +54,11 @@
 }
 
 .hero__title {
+    position: relative;
     line-height: 7rem;
     margin-top: 0;
     margin-bottom: 35px;
+    z-index: 999;
 }
 
 .hero__title span {
